@@ -1,4 +1,4 @@
-# questcraft-Offline-account-creator
+# questcraft-offline-account-creator-EN
  Used for creating offline accounts in QuestCraft, Provide offline accounts for pirated players
  ![main](/qcofa.png) [简体中文](README_ZH.md)
  
@@ -18,14 +18,14 @@
 Theoretically any Android device can use this method
 
 ## How to achieve it
-The implementation principle involves modifying the Android directory the DemoMode account from the  [/data/user/0/com.qcxr.qcxr/files/accounts] Get this file (you Android root access required) The username can be any name, but the UUID may require a specific value Change the DemoMode to false 
+The implementation principle involves modifying the Android directory the DemoMode account from the `/data/user/0/com.qcxr.qcxr/files/accounts` file. Root access is required. For Quest 2/3 rooting, see: https://github.com/Lumince/singularity (last incremental for Singularity to work: 52222680028100150, Jul 26th, 2026 build date). The username can be anything, but the UUID may require a specific value. Change the DemoMode value to false.
 Modified content:
 ```bash
 "isDemoMode": false,
 "username": ""
 "uuid": ""
 ```
-After making these changes, it will function as an offline account, Additionally, the file in  [storage/emulated/0/Android/data/com.qcxr.qcxr/files/launcher.conf]  needs to be modified so that the account information can be properly displayed:
+After making these changes, it will function as an offline account, Additionally, the file in `storage/emulated/0/Android/data/com.qcxr.qcxr/files/launcher.conf]`  needs to be modified so that the account information can be properly displayed:
 ```bash
 {
 "acceptedLegal": true,
@@ -45,12 +45,11 @@ After making these changes, it will function as an offline account, Additionally
 In this way you have successfully added an account However please note that if you’ve previously installed the game version, you don’t need to be connected to the internet The account will only take effect when you start the game with the internet disconnected If you’re reconnected to the internet the account won’t function
 
 # How to use it
-Download the first released graphical configuration interface. After downloading and installing it, you can customize and edit various options related to the demo account, including the demo mode switch. All the generated files will be in this directory.
-/storage/emulated/0/Android/data/cn.qcofa.com/files/
+Download the first released graphical configuration interface. After downloading and installing it, you can customize and edit various options related to the demo account, including the demo mode switch. All the generated files will be in the directory `/storage/emulated/0/Android/data/cn.qcofa.com/files/`
 All JSON files in the questcraft_accounts folder are here.
-The launcher.conf file in the files root directory is also here. I’ve updated it to enable support for multiple accounts
+The `launcher.conf` file in the files root directory is also here. I’ve updated it to enable support for multiple accounts
 
-## How to import?
+## How to import
 Use the injection file provider of the mt file manager to convert your existing installed qc into a function of the injection file provider.
 For details, please refer to this project.
 [https://github.com/L-JINBIN/MTDataFilesProvider]
