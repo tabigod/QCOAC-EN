@@ -1,5 +1,5 @@
 # questcraft-offline-account-creator-EN
- Used for creating offline accounts in QuestCraft, Provide offline accounts for pirated players
+ Used for creating offline accounts in QuestCraft, Provide offline accounts for players with no account
  ![main](/qcofa.png) [简体中文](README_ZH.md)
  
 ## Suitable For Quest, Pico, YVR，QIYU
