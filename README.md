@@ -25,7 +25,7 @@ Modified content:
 "username": ""
 "uuid": ""
 ```
-After making these changes, it will function as an offline account, Additionally, the file in `storage/emulated/0/Android/data/com.qcxr.qcxr/files/launcher.conf]`  needs to be modified so that the account information can be properly displayed:
+After making these changes, it will function as an offline account, Additionally, the file in `storage/emulated/0/Android/data/com.qcxr.qcxr/files/launcher.conf`  needs to be modified so that the account information can be properly displayed:
 ```bash
 {
 "acceptedLegal": true,
